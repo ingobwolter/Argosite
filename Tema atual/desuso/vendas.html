@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+@Autor Ingo Wolter
+@Data 2014
+@Subsite
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hospedagem de sites - Nova ArgoHost</title>
+<link href="Content/bootstrap.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="Content/estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="Content/animate.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- scripts -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script> 
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.js"></script>
+<script>
+$(document).ready(function(){
+ 
+    activePanel = $("#accordion div.panel:first");
+    $(activePanel).addClass('active');
+ 
+    $("#accordion").delegate('.panel', 'click', function(e){
+         if( ! $(this).is('.active') ){
+			$(activePanel).animate({width: "44px"}, 300);
+			$(this).animate({width: "848px"}, 300);
+			$('#accordion .panel').removeClass('active');
+			$(this).addClass('active');
+			activePanel = this;
+		 };
+    });
+});
+</script>
+</head>
+
+<body>
+	<div class="topoargo">
+    	<center>
+        	<img src="Content/images/logo/logo_argohost.svg" width="90px" height="43px;">
+        </center>
+    </div>
+	
+    <section style="background-position: 50% 0px;" class="bgargo" id="nova_vendas" data-speed="5"  data-offset="100">
+	<article>
+		<div class="cotainer">
+	   		<div id="container_12">
+	    		<center><h1>Vendas</h1></center>
+      		</div>
+		</div>
+    </article>
+ 	</section>   
+    <!--Rodapé Nova Argohost-->
+<footer id="portal-footer">
+
+    <div class="container"><b>
+        <ul id="portal-footer-links">
+            <li><a href="http://argohost.net/nova_argohost.html">Argohost</a></li>
+            <li><a href="http://argohost.net/nova_infraestrutura.html">Infraestrutura</a></li>
+            <li><a href="#">Política e contrato</a></li>
+            <li><a href="#">Processo de vendas</a></li>
+            <li><a href="http://argohost.net/novo_atendimento.html">Atendimento</a></li>
+        </ul></b>
+            <div id="portal-signoff">  
+            <a href="http://www.mobtecnologia.com.br" target="_blank"><img src="Content/images/icones/mob.svg" title="Parceiro de datacenter Brasileiro" width="50" height="45"></a> 
+            </div>    
+        
+        <div id="portal-signoff"> 
+            <a href="http://www.argohost.net" target="_self"><img src="Content/images/logo/logorodape.svg" title="Todos os direitos reservados" width="90" height="47"></a>
+
+         </div>    
+         
+            <div id="portal-signoff"> 
+            <a href="http://www.softlayer.com/" target="_self"><img src="Content/images/marcas/SOFTLAYER.svg" title="Parceiro de Datacenter estrangeiro" width="90" height="47"></a>
+
+         </div>    
+         
+         
+      	<!--
+        				<em>&#169; Argohost 2003-2014</em> 
+        -->
+  </div>
+</footer>
+   
+</body>
+</html>

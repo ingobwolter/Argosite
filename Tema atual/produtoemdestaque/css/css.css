@@ -1,0 +1,73 @@
+@charset "utf-8";
+#container{
+	position:fixed;
+	top:0%;
+	right:3%;
+	color:#FFF;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+#distancia{/*Aqui é o tamanho da região*/
+	width: 356px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+#dentro{
+	width: 356px;
+	height: 500px;
+	font-size:14px;
+	position: absolute;
+	top: 440px;
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-ms-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	font:14px Verdana, Geneva, sans-serif;
+	font-weight:600;
+}
+#abrir{
+	float:left;
+	cursor:pointer;
+	margin-left:31px;
+	display:block;
+	position:relative;
+	top:16px;
+}
+/*
+#abrir:hover{
+	color:#FFF;
+	background-color:#0F3;
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-ms-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}*/
+#fechar{
+	display:block;
+	width:10px;
+	height:18px;
+	float:right;
+	background-color: rgba(99, 147, 103, 1);
+	text-align:center;
+	line-height:13px;
+	cursor:pointer;
+	padding:0px 5px;
+	margin-right:10px;
+	border-radius:14px;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	position:relative;
+	bottom:-58px;
+	right:4px;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}

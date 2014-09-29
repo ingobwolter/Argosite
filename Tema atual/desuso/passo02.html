@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Pedidos - Argohost.net</title>
+			<base href="http://www.argohost.net/whmcs/">	
+			<script type="text/javascript" src="templates/template-bootstrap-master/assets/jquery/js/jquery-1.10.2.min.js"></script>
+	
+			<script type="text/javascript" src="templates/template-bootstrap-master/assets/bootstrap/js/bootstrap.min.js"></script>
+			<link href="templates/template-bootstrap-master/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+			<script src="templates/template-bootstrap-master/assets/whmcs/js/whmcs.js"></script>
+			<link href="templates/template-bootstrap-master/assets/whmcs/css/whmcs.css" rel="stylesheet">
+	
+						
+			
+		</head>
+		<body>
+
+			
+
+					<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Conta <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="clientarea.php">Login</a></li>
+										<li><a href="register.php">Registrar</a></li>
+										<li class="divider"></li>
+										<li><a href="pwreset.php">Esqueceu a Senha?</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="whmcsbody" class="container"><script type="text/javascript" src="includes/jscript/jqueryui.js"></script>
+<script type="text/javascript" src="templates/orderforms/comparison/js/main.js"></script>
+<script type="text/javascript" src="includes/jscript/statesdropdown.js"></script>
+<script type="text/javascript" src="includes/jscript/pwstrength.js"></script>
+<script type="text/javascript" src="includes/jscript/creditcard.js"></script>
+
+<link rel="stylesheet" type="text/css" href="templates/orderforms/comparison/style.css" />
+<link rel="stylesheet" type="text/css" href="templates/orderforms/comparison/uistyle.css" />
+
+<script language="javascript">
+function removeItem(type,num) {
+    var response = confirm("Tem certeza que deeja remover este item do seu carrinho?");
+    if (response) {
+        window.location = 'cart.php?a=remove&r='+type+'&i='+num;
+    }
+}
+function emptyCart(type,num) {
+    var response = confirm("Tem certeza que deseja esvaziar seu carrinho de compras?");
+    if (response) {
+        window.location = 'cart.php?a=empty';
+    }
+}
+</script>
+<script>
+var langPasswordStrength = "For&ccedil;a da Senha";
+var langPasswordWeak = "Fraco";
+var langPasswordModerate = "Moderado";
+var langPasswordStrong = "Forte";
+</script>
+
+<div id="order-comparison">
+
+<div class="stepscontainer">
+<div class="step">
+<span class="title">Passo 1</span>
+Escolha o dom&iacute;nio
+</div>
+<div class="arrow"></div>
+<div class="step">
+<span class="title">Passo 2</span>
+Selecione as Op&ccedil;&otilde;es
+</div>
+<div class="arrowactiveleft"></div>
+<div class="stepactive">
+<span class="title">Passo 3</span>
+Revisar e Finalizar
+</div>
+<div class="clear"></div>
+</div>
+<div class="cartcontainer">
+
+
+
+<h2>resumo do pedido</h2>
+
+<form method="post" action="/whmcs/cart.php?a=view">
+<input type="hidden" name="token" value="2bcd9e7fc0aa6447a41d74c2493cbe5b90d62440" />
+
+<table class="carttable">
+<tr class="carttableheading"><th width="70%">Descri&ccedil;&atilde;o</th><th width="30%">Pre&ccedil;o</th></tr>
+
+<tr class="carttableproduct"><td>
+<strong><em>HOSPEDAGEM LINUX</em> - ArgoBIT_Carnaval</strong> (argiasds.com)<br />
+<a href="/whmcs/cart.php?a=confproduct&i=0" class="cartedit">[Editar configura&ccedil;&atilde;o]</a> <a href="#" onclick="removeItem('p','0');return false" class="cartremove">[Remover]</a>
+</td><td class="textcenter"><strong>R$22,14BRL</strong></td></tr>
+
+
+<tr class="carttableproduct"><td>
+<strong>Registro de Dom&iacute;nio</strong> - argiasds.com - 5 Ano(s)<br />
+<a href="/whmcs/cart.php?a=confdomains" class="cartedit">[Configurar extras de dom&iacute;nio]</a> <a href="#" onclick="removeItem('d','0');return false" class="cartremove">[Remover]</a>
+</td><td class="textcenter"><strong>R$24,35BRL</strong></td></tr>
+
+
+
+<tr class="summary"><td class="textright">Subtotal: &nbsp;</td><td class="textcenter">R$46,49BRL</td></tr>
+</table>
+
+</form>
+
+<div class="checkoutbuttonsleft">
+<input type="button" value="Esvaziar Pedido" onclick="emptyCart();return false" class="cartbutton red" /> <input type="button" value="Continuar comprando" onclick="window.location='cart.php'" class="cartbutton" />
+</div>
+<div class="checkoutbuttonsright">
+<div class="totalduetoday">Pagamento hoje: R$46,49BRL</div>
+<div class="totalrecurring">Pagamento reincidente: R$22,14BRL Mensal<br /></div>
+<div class="promo"><input type="text" id="promocode" size="20" value="C&oacute;digo de Promo&ccedil;&atilde;o" onfocus="if(this.value=='C&oacute;digo de Promo&ccedil;&atilde;o')this.value=''" /> <input type="submit" value="OK" onclick="applypromo()" class="cartbutton" /></div>
+</div>
+
+<div class="clear"></div>
+
+
+<div class="viewcartcol1">
+
+<h2>seus detalhes</h2>
+
+<form method="post" action="/whmcs/cart.php?a=checkout" id="orderfrm">
+<input type="hidden" name="token" value="2bcd9e7fc0aa6447a41d74c2493cbe5b90d62440" />
+<input type="hidden" name="submit" value="true" />
+
+<input type="hidden" name="custtype" id="custtype" value="new" />
+
+<div id="loginfrm" style="display:none;">
+<p>N&atilde;o registrado? <a href="#" onclick="showloginform();return false;">Clique aqui para efetuar o cadastro...</a></a></p>
+<table width="100%" cellpadding="2">
+<tr><td width="100">Email:</td><td><input type="text" name="loginemail" style="width:80%;" value="" /></td></tr>
+<tr><td>Senha:</td><td><input type="password" name="loginpw" style="width:50%;" /></td></tr>
+</table>
+</div>
+
+<div id="signupfrm">
+
+<p>J&aacute; registrado? <a href="/whmcs/cart.php?a=login" onclick="showloginform();return false;">Clique aqui para efetuar login...</a></p>
+<table width="100%" cellpadding="2">
+<tr><td width="100">Nome</td><td><input type="text" name="firstname" style="width:80%;" value="" /></td></tr>
+<tr><td>Sobrenome</td><td><input type="text" name="lastname" style="width:80%;" value="" /></td></tr>
+<tr><td>Empresa</td><td><input type="text" name="companyname" style="width:80%;" value="" /></td></tr>
+<tr><td>Email</td><td><input type="text" name="email" style="width:90%;" value="" /></td></tr>
+<tr><td>Endere&ccedil;o</td><td><input type="text" name="address1" style="width:80%;" value="" /></td></tr>
+<tr><td>Bairro</td><td><input type="text" name="address2" style="width:80%;" value="" /></td></tr>
+<tr><td>Cidade</td><td><input type="text" name="city" style="width:80%;" value="" /></td></tr>
+<tr><td>Estado</td><td><input type="text" name="state" style="width:80%;" value="" /></td></tr>
+<tr><td>CEP</td><td><input type="text" name="postcode" size="15" value="" /></td></tr>
+<tr><td>Pa&iacute;s</td><td><select name="country" id="country"><option value="AF">Afghanistan</option><option value="AX">Aland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua And Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia And Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR" selected="selected">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Congo, Democratic Republic</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D'Ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curacao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island & Mcdonald Islands</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran, Islamic Republic Of</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle Of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KR">Korea</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao People's Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libyan Arab Jamahiriya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States Of</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestine, State of</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint Barthelemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts And Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre And Miquelon</option><option value="VC">Saint Vincent And Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome And Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia And Sandwich Isl.</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard And Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syrian Arab Republic</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad And Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks And Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="VG">Virgin Islands, British</option><option value="VI">Virgin Islands, U.S.</option><option value="WF">Wallis And Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select></td></tr>
+<tr><td>Telefone</td><td><input type="text" name="phonenumber" size="20" value="" /></td></tr>
+<tr><td>Senha</td><td><input type="password" name="password" id="newpw" size="20" value="" /></td></tr>
+<tr><td>Confirmar Senha</td><td><input type="password" name="password2" size="20" value="" /></td></tr>
+<tr><td colspan="2" align="center"><script language="javascript">showStrengthBar();</script></td></tr>
+</table>
+
+
+</div>
+
+<br />
+<h2>informa&ccedil;&otilde;es do registro de dom&iacute;nio</h2>
+<p><select name="contact" id="domaincontact" onchange="domaincontactchange()">
+<option value="">Usar contato padr&atilde;o(acima)</option>
+<option value="addingnew">Adicionar novo contato...</option>
+</select><br /></p>
+<div id="domaincontactfields">
+<table width="100%" cellpadding="2">
+<tr><td width="100">Nome</td><td><input type="text" name="domaincontactfirstname" style="width:80%;" value="" /></td></tr>
+<tr><td>Sobrenome</td><td><input type="text" name="domaincontactlastname" style="width:80%;" value="" /></td></tr>
+<tr><td>Empresa</td><td><input type="text" name="domaincontactcompanyname" style="width:80%;" value="" /></td></tr>
+<tr><td>Email</td><td><input type="text" name="domaincontactemail" style="width:90%;" value="" /></td></tr>
+<tr><td width="100">Endere&ccedil;o</td><td><input type="text" name="domaincontactaddress1" style="width:80%;" value="" /></td></tr>
+<tr><td>Bairro</td><td><input type="text" name="domaincontactaddress2" style="width:80%;" value="" /></td></tr>
+<tr><td>Cidade</td><td><input type="text" name="domaincontactcity" style="width:80%;" value="" /></td></tr>
+<tr><td>Estado</td><td><input type="text" name="domaincontactstate" style="width:80%;" value="" /></td></tr>
+<tr><td>CEP</td><td><input type="text" name="domaincontactpostcode" size="15" value="" /></td></tr>
+<tr><td>Pa&iacute;s</td><td><select name="domaincontactcountry" id="domaincontactcountry"><option value="AF">Afghanistan</option><option value="AX">Aland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua And Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia And Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR" selected="selected">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Congo, Democratic Republic</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D'Ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curacao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island & Mcdonald Islands</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran, Islamic Republic Of</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle Of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KR">Korea</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao People's Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libyan Arab Jamahiriya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States Of</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestine, State of</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint Barthelemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts And Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre And Miquelon</option><option value="VC">Saint Vincent And Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome And Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia And Sandwich Isl.</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard And Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syrian Arab Republic</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad And Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks And Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="VG">Virgin Islands, British</option><option value="VI">Virgin Islands, U.S.</option><option value="WF">Wallis And Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select></td></tr>
+<tr><td>Telefone</td><td><input type="text" name="domaincontactphonenumber" size="20" value="" /></td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="viewcartcol2">
+
+<h2>forma de pagamento</h2>
+<p class="paymentmethods"><label><input type="radio" name="paymentmethod" value="pagseguro" onclick="hideCCForm()" checked />PagSeguro</label><br /><label><input type="radio" name="paymentmethod" value="boleto" onclick="hideCCForm()" />Boleto</label><br /><label><input type="radio" name="paymentmethod" value="moip" onclick="hideCCForm()" />MoIP</label><br /></p>
+
+<div id="ccinputform" style="display:none;">
+<table width="100%" cellpadding="2">
+<input type="hidden" name="ccinfo" value="new" /><tr class="newccinfo"><td width="100">Tipo do Cart&atilde;o</td><td><select name="cctype" id="cctype">
+<option>American Express</option>
+</select></td></tr>
+<tr class="newccinfo"><td>N&uacute;mero do Cart&atilde;o</td><td><input type="text" name="ccnumber" value="" style="width:80%;" autocomplete="off" /></td></tr>
+<tr class="newccinfo"><td>Data Expira</td><td><select name="ccexpirymonth" id="ccexpirymonth" class="newccinfo"><option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select> / <select name="ccexpiryyear" class="newccinfo">
+<option>2014</option>
+<option>2015</option>
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+</select></td></tr>
+<tr><td width="100">CVV/CVC2</td><td><input type="text" name="cccvv" id="cccvv" value="" size="5" autocomplete="off" /></td></tr>
+<tr><td></td><td><a href="#" onclick="window.open('images/ccv.gif','','width=280,height=200,scrollbars=no,top=100,left=100');return false">Onde eu acho isso?</a></td></tr>
+</table>
+</div>
+
+<br />
+
+<h2>notas / informa&ccedil;&otilde;es adicionais</h2>
+<p align="center"><textarea name="notes" rows="3" style="width:95%" onFocus="if(this.value=='Voc&ecirc; pode inserir aqui informa&ccedil;&otilde;es ou notas adicionais...'){this.value='';}" onBlur="if (this.value==''){this.value='Voc&ecirc; pode inserir aqui informa&ccedil;&otilde;es ou notas adicionais...';}">Voc&ecirc; pode inserir aqui informa&ccedil;&otilde;es ou notas adicionais...</textarea></p>
+
+<br />
+
+
+<p align="center"><input type="submit" value="Completar Pedido &raquo;" onclick="this.value='Favor Aguardar...'" class="cartbutton green" /></p>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="checkoutsecure"><img align="left" src="images/padlock.gif" border="0" vspace="5" alt="Secure Transaction" style="padding-right: 10px;" /> Este pedido &eacute; protegido por procedimentos de seguran&ccedil;a e para evitar fraudes o seu atual endere&ccedil;o de IP (<strong>201.20.64.51</strong>) est&aacute; sendo registrado.</div>
+
+</div>
+
+</form>
+
+</div>
+
+
+
+		</div>
+		<div id="whmcsfooter" class="container text-muted">
+			<hr>
+			<div class="pull-right">Copyright &copy; 2014 Argohost.net. All Rights Reserved.</div>
+					</div>
+		
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"a9d50852f7","applicationID":"3687481","transactionName":"YAFTN0ZZWxYEBUBQWFlLZBFdF0INCAVHFlRWFkVNRFBF","queueTime":0,"applicationTime":239,"ttGuid":"","agentToken":"","atts":"TEZQQQ5DSBg=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>
